@@ -13,3 +13,22 @@ A entrada contém vários casos de teste. Cada caso de teste começa com um inte
 
 ## Saída
 Cada linha de cada caso de teste deve conter uma `treap` com os nós especificados. Uma treap é impressa como `(<Sub-treap da Esquerda><Rótulo>/<Prioridade><Sub-treap da Direita>)` As sub-treaps são impressas recursivamente e omitidas se forem folhas.
+
+## Exemplo
+```
+Entrada:
+7 a/7 b/6 c/5 d/4 e/3 f/2 g/1
+
+7 a/1 b/2 c/3 d/4 e/5 f/6 g/7
+
+7 a/3 b/6 c/4 d/7 e/2 f/5 g/1
+
+0
+
+Saída:
+(a/7(b/6(c/5(d/4(e/3(f/2(g/1)))))))
+
+(((((((a/1)b/2)c/3)d/4)e/5)f/6)g/7)
+
+(((a/3)b/6(c/4))d/7((e/2)f/5(g/1)))
+```
